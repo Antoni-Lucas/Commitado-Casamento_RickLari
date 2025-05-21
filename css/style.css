@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  background-color: #9cbe79;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+}
+
+header {
+  background:rgb(255, 255, 255);
+  padding: 4px 18px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+header h1 {
+  margin: 30px;
+  font-size: 4rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+}
+
+.item {
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.item img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.item .name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+
+.item .name:hover {
+  text-decoration: underline;
+  color: #2a9d8f;
+}
+
+.item .price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.item .pix {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #2a9d8f;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.item .pix:hover {
+  text-decoration: underline;
+}
+
+/* @media (max-width: 400px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  header {
+    font-size: 2rem;
+    padding: 40px 15px;
+  }
+}*/
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* Mantém duas colunas */
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .item {
+    padding: 10px;
+  }
+
+  .item .name {
+    font-size: 1.2rem;
+  }
+
+  .item .price {
+    font-size: 1rem;
+  }
+
+  .item .pix {
+    font-size: 0.95rem;
+  }
+
+  header {
+    font-size: 1.6rem;
+    padding: 15px;
+  }
+}
+
+
+
+/*
+
+ Container flexível para os itens
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+Cada item
+
+.item {
+  width: 300px;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+Imagens responsivas
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+ Texto e botão Pix 
+
+.name, .price, .pix {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+ Estilo do botão Pix 
+
+.pix {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+ 📱 MEDIA QUERY para telas pequenas 
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  header {
+    font-size: 1.4em;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .pix {
+    padding: 10px;
+    font-size: 1em;
+  }
+}
+
+
+*/
